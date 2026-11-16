@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ubicación | Dulce Trigo</title>
+<meta name="description" content="Dirección, horario de atención y contacto de Dulce Trigo.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<header class="encabezado" id="encabezado">
+  <div class="contenedor barra-nav">
+
+     <a href="index.html" class="marca">
+      <img src="imagenlogo.jpeg" alt="lodo dulce trigo" width="130" height="100">
+      <span class="marca-texto">Dulce<strong>Trigo</strong></span>
+    </a>
+
+    <nav class="nav-principal" id="navPrincipal">
+      <a href="index.html" data-pagina="index.html">Inicio</a>
+      <a href="carta.html" data-pagina="carta.html">A la carta</a>
+      <a href="historia.html" data-pagina="historia.html">Nuestra historia</a>
+      <a href="ubicacion.html" data-pagina="ubicacion.html">Ubicación</a>
+      <a href="contacto.html" data-pagina="contacto.html">Contáctanos</a>
+    </nav>
+
+    <div class="acciones-nav">
+      <button class="boton-carrito" id="botonCarrito" aria-label="Abrir carrito de compras">
+        🛒 <span class="texto-carrito-btn">Carrito</span>
+        <span class="contador-carrito" id="contadorCarrito">0</span>
+      </button>
+      <button class="boton-menu-movil" id="botonMenuMovil" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="encabezado-pagina" style="background-image:url('https://images.unsplash.com/photo-1704809940297-c8b0fe1c1028?auto=format&fit=crop&w=1600&q=80')">
+    <div class="contenedor">
+      <p class="migas"><a href="index.html">Inicio</a> / Ubicación</p>
+      <h1>Encuéntranos</h1>
+      <p>Recoge tu pedido en tienda o coordina el envío por WhatsApp según tu distrito.</p>
+    </div>
+  </section>
+
+  <section class="seccion-menu">
+    <div class="contenedor">
+      <div class="bloque-mapa">
+        <div class="mapa-marcador">
+          <span class="pin">📍</span>
+          <strong>Carlos Alvear, La Esperanza</strong>
+          <p>A una cuadra de la plaza de Armas.</p>
+          <a  target="_blank" rel="noopener"></a>
+             <iframe src="https://www.google.com/maps?q=Carlos+Alvear,+La+Esperanza,+Trujillo,+Peru&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+             Cómo llegar
+          
+        </div>
+
+        <div class="tarjeta-info-ubicacion">
+          <h3>Horario de atención</h3>
+          <ul class="lista-horarios">
+            <li><span>Lunes a viernes</span> <strong>8:00 am – 8:00 pm</strong></li>
+            <li><span>Sábados</span> <strong>8:00 am – 8:00 pm</strong></li>
+            <li><span>Domingos</span> <strong>9:00 am – 1:00 pm</strong></li>
+          </ul>
+          <h3 style="margin-top:10px;">Contacto directo</h3>
+          <p>📞 +51 935 246 885<br>✉️ trigo@gmail.com</p>
+          <a href="https://wa.me/51935246885" target="_blank" rel="noopener" class="boton boton-primario" style="align-self:flex-start;">
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie" id="pie-contacto">
+  <div class="contenedor">
+
+    <div class="pie-marca">
+      <span class="marca-texto">Dulce<strong>Trigo</strong></span>
+      <p>Panadería artesanal de barrio. Pan y bocaditos horneados cada mañana con recetas de familia.</p>
+    </div>
+
+    <div class="pie-columna">
+      <h4>Explorar</h4>
+      <a href="index.html">Inicio</a>
+      <a href="carta.html">A la carta</a>
+      <a href="historia.html">Nuestra historia</a>
+      <a href="ubicacion.html">Ubicación</a>
+    </div>
+
+    <div class="pie-columna">
+      <h4>Contáctanos</h4>
+      <a href="contacto.html">Escríbenos</a>
+      <a href="https://wa.me/51935246885" target="_blank" rel="noopener">WhatsApp: +51 935 246 885</a>
+      <a href="mailto:trigo@gmail.com">trigo@gmail.com</a>
+    </div>
+
+  </div>
+
+  <div class="contenedor linea-pie">
+    © 2026 Dulce Trigo. Todos los derechos reservados.
+  </div>
+</footer>
+
+
+
+<div class="fondo-carrito" id="fondoCarrito"></div>
+<aside class="panel-carrito" id="panelCarrito" aria-label="Carrito de compras">
+  <div class="cabecera-carrito">
+    <h3>Tu pedido</h3>
+    <button class="cerrar-carrito" id="cerrarCarrito" aria-label="Cerrar carrito">✕</button>
+  </div>
+
+  <div class="lista-carrito" id="listaCarrito">
+    <div class="carrito-vacio">
+      <div class="icono-vacio">🥐</div>
+      <p>Tu carrito está vacío.<br>Agrega bocaditos o panes desde la carta.</p>
+    </div>
+  </div>
+
+  <div class="pie-carrito">
+    <div class="fila-total">
+      <span>Total</span>
+      <span id="totalCarrito">S/ 0.00</span>
+    </div>
+        <button class="boton-whatsapp-pedido boton-finalizar-pedido" id="botonFinalizarPedido" disabled>
+      Finalizar pedido <span aria-hidden="true">→</span>
+    </button>
+    <button class="boton-seguir-comprando" id="botonSeguirComprando">Seguir comprando</button>
+    <p class="nota-pedido">Completa tus datos para confirmar el pedido.</p>
+  </div>
+</aside>
+
+<div class="aviso-toast" id="avisoToast">✔ Agregado al carrito</div>
+<script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detalle y comprobante de tu pedido de Dulce Trigo.">
+  <title>Pedido confirmado | Dulce Trigo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-pedido pagina-confirmacion">
+  <main class="tarjeta-confirmacion">
+    <div class="estado-confirmacion" id="estadoConfirmacion">
+      <div class="icono-confirmacion">✓</div>
+      <h1>¡Pedido confirmado!</h1>
+      <p>Gracias por elegir <strong>Dulce Trigo</strong>. Recibimos tu pedido y lo estamos preparando con mucho cariño. 🥐</p>
+    </div>
+    <div class="cargando-pedido" id="cargandoPedido">Cargando el comprobante de tu pedido…</div>
+    <div class="detalle-confirmacion" id="detalleConfirmacion" hidden>
+      <section class="numero-pedido">
+        <span>NÚMERO DE PEDIDO</span>
+        <strong id="numeroPedido">—</strong>
+      </section>
+      <dl class="datos-confirmacion">
+        <div><dt>Cliente</dt><dd id="clienteConfirmacion">—</dd></div>
+        <div><dt>Comprobante solicitado</dt><dd id="comprobanteConfirmacion">—</dd></div>
+        <div><dt>Total del pedido</dt><dd id="totalConfirmacion">—</dd></div>
+        <div><dt>Tipo de entrega</dt><dd id="entregaConfirmacion">—</dd></div>
+        <div><dt>Método de pago</dt><dd id="pagoConfirmacion">—</dd></div>
+      </dl>
+      <section class="bloque-entrega-confirmacion">
+        <h2 id="tituloEntrega">📍 RECOGE EN</h2>
+        <strong id="direccionConfirmacion">—</strong>
+        <a id="mapaConfirmacion" href="https://www.google.com/maps?q=Carlos+Alvear,+La+Esperanza,+Trujillo,+Peru" target="_blank" rel="noopener">🗺️ Ver en Google Maps →</a>
+      </section>
+      <section class="detalle-items-confirmacion">
+        <h2>🧾 DETALLE DEL PEDIDO</h2>
+        <div id="itemsConfirmacion"></div>
+        <div class="total-final-confirmacion"><span>Total</span><strong id="totalItemsConfirmacion">—</strong></div>
+      </section>
+      <section class="siguiente-confirmacion">
+        <h2>¿QUÉ SIGUE?</h2>
+        <p>📦 La panadería revisará y preparará tu pedido.</p>
+        <p>📱 Te contactaremos para coordinar el pago o la entrega.</p>
+        <p>✉️ El resumen también queda disponible en esta página.</p>
+      </section>
+      <p class="nota-tributaria">Este es el comprobante de registro del pedido. La boleta o factura electrónica se coordina con la panadería.</p>
+      <div class="acciones-confirmacion">
+        <a class="boton-volver-tienda" href="carta.html">🛍️ Seguir comprando</a>
+        <button class="boton-consultar-whatsapp" id="botonWhatsappConfirmacion" type="button">● Consultar por WhatsApp</button>
+        <button class="boton-imprimir" id="botonImprimir" type="button">Imprimir comprobante</button>
+      </div>
+      <a class="enlace-inicio-confirmacion" href="index.html">← Volver al inicio</a>
+    </div>
+    <div class="error-pedido" id="errorPedido" hidden>
+      <p id="textoErrorPedido">No encontramos el pedido.</p>
+      <a href="carta.html" class="boton-volver-tienda">Volver a la carta</a>
+    </div>
+  </main>
+  <script src="pedido.js"></script>
+</body>
+</html>

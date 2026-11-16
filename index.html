@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dulce Trigo | Panadería Artesanal</title>
+<meta name="description" content="Dulce Trigo — panadería artesanal. Bocaditos dulces, bocaditos salados y panes recién horneados. Pide por WhatsApp.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<header class="encabezado" id="encabezado">
+  <div class="contenedor barra-nav">
+
+    <a href="index.html" class="marca">
+      <img src="imagenlogo.jpeg" alt="lodo dulce trigo" width="130" height="100">
+      <span class="marca-texto">Dulce<strong>Trigo</strong></span>
+    </a>
+
+    <nav class="nav-principal" id="navPrincipal">
+      <a href="index.html" data-pagina="index.html">Inicio</a>
+      <a href="carta.html" data-pagina="carta.html">A la carta</a>
+      <a href="historia.html" data-pagina="historia.html">Nuestra historia</a>
+      <a href="ubicacion.html" data-pagina="ubicacion.html">Ubicación</a>
+      <a href="contacto.html" data-pagina="contacto.html">Contáctanos</a>
+    </nav>
+
+    <div class="acciones-nav">
+      <button class="boton-carrito" id="botonCarrito" aria-label="Abrir carrito de compras">
+        🛒 <span class="texto-carrito-btn">Carrito</span>
+        <span class="contador-carrito" id="contadorCarrito">0</span>
+      </button>
+      <button class="boton-menu-movil" id="botonMenuMovil" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="inicio">
+    <div class="hero-carrusel" id="heroCarrusel">
+      <div class="hero-slide activa" style="background-image:url('https://images.unsplash.com/photo-1704809940297-c8b0fe1c1028?auto=format&fit=crop&w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1722308253219-4f491ff1bc89?auto=format&fit=crop&w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://media.istockphoto.com/id/2224025414/es/foto/bollo-fresco-mezclado-panecillos-e-ingredientes-en-una-cocina-r%C3%BAstica.jpg?s=612x612&w=0&k=20&c=p-9YN4BzaQ7xRLIax7BuWYVm6lGR6otHIbF_lP5oZtg=auto=format&fit=crop&w=1600&q=80')"></div>
+    </div>
+
+    <button class="hero-flecha anterior" id="flechaAnterior" aria-label="Imagen anterior">‹</button>
+    <button class="hero-flecha siguiente" id="flechaSiguiente" aria-label="Imagen siguiente">›</button>
+
+    <div class="contenedor hero-contenido">
+      <div class="tarjeta-hero">
+        <span class="hero-etiqueta">-Panadería de barrio, horneado del día</span>
+        <h1>La tradición del buen pan,<em>horneada cada mañana.</em></h1>
+        <p>En Dulce Trigo elaboramos pan, bocaditos dulces y bocaditos salados con recetas de familia, ingredientes seleccionados y el cuidado de un oficio que no se apura.</p>
+        <div class="hero-botones">
+          <a href="carta.html" class="boton boton-primario">Ver la carta</a>
+          <a href="https://wa.me/51935246885" target="_blank" rel="noopener" class="boton boton-fantasma">Hacer un pedido</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-controles" id="heroControles"></div>
+  </section>
+
+  <section class="confianza">
+    <div class="contenedor">
+      <div class="dato-confianza">
+        <span class="icono">♨</span>
+        <div><h3>Horneado diario</h3><p>Todo sale del horno la misma mañana.</p></div>
+      </div>
+      <div class="dato-confianza">
+        <span class="icono">🌾</span>
+        <div><h3>Recetas de casa</h3><p>Las mismas de nuestra familia hace 20 años.</p></div>
+      </div>
+      <div class="dato-confianza">
+        <span class="icono">🛵</span>
+        <div><h3>Coordina por WhatsApp</h3><p>Arma tu pedido y confírmalo al toque.</p></div>
+      </div>
+      <div class="dato-confianza">
+        <span class="icono">💳</span>
+        <div><h3>Recojo en tienda</h3><p>O envío según la zona.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque-tienda" style="padding-top:60px;">
+    <div class="contenedor">
+      <div class="tarjeta-tienda">
+        <div class="foto-tienda">
+          <img src="https://images.unsplash.com/photo-1692742249337-3bf05e2b1ed7?auto=format&fit=crop&w=900&q=80" alt="Croissants recién horneados en el mostrador de Dulce Trigo" loading="lazy">
+        </div>
+        <div class="texto-tienda">
+          <h2>Bocaditos y panes para toda ocasión</h2>
+          <p>Arma tu pedido de bocaditos dulces, salados o panes de siempre desde nuestra carta, y coordina el recojo o envío directo por WhatsApp.</p>
+          <a href="carta.html" class="boton boton-primario" style="align-self:flex-start; margin-top:6px;">Ir a la carta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie" id="pie-contacto">
+  <div class="contenedor">
+
+    <div class="pie-marca">
+      <span class="marca-texto">Dulce<strong>Trigo</strong></span>
+      <p>Panadería artesanal de barrio. Pan y bocaditos horneados cada mañana con recetas de familia.</p>
+    </div>
+
+    <div class="pie-columna">
+      <h4>Explorar</h4>
+      <a href="index.html">Inicio</a>
+      <a href="carta.html">A la carta</a>
+      <a href="historia.html">Nuestra historia</a>
+      <a href="ubicacion.html">Ubicación</a>
+    </div>
+
+    <div class="pie-columna">
+      <h4>Contáctanos</h4>
+      <a href="contacto.html">Escríbenos</a>
+      <a href="https://wa.me/51935246885" target="_blank" rel="noopener">WhatsApp: +51 935 246 885</a>
+      <a href="mailto:trigo@gmail.com">trigo@gmail.com</a>
+    </div>
+
+  </div>
+
+  <div class="contenedor linea-pie">
+    © 2026 Dulce Trigo. Todos los derechos reservados.
+  </div>
+</footer>
+
+<a class="whatsapp-flotante" href="https://wa.me/51935246885" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.26.62 4.38 1.7 6.2L4 29l7.94-1.66a11.9 11.9 0 0 0 4.08.72c6.62 0 12.02-5.4 12.02-12.02C28.04 8.4 22.64 3 16.02 3zm0 21.86c-1.36 0-2.7-.35-3.86-1.02l-.28-.16-4.7.98.99-4.58-.18-.3a9.8 9.8 0 0 1-1.5-5.26c0-5.42 4.4-9.82 9.83-9.82 5.42 0 9.82 4.4 9.82 9.82 0 5.43-4.4 9.34-9.82 9.34zm5.4-7.36c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.5.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<div class="fondo-carrito" id="fondoCarrito"></div>
+<aside class="panel-carrito" id="panelCarrito" aria-label="Carrito de compras">
+  <div class="cabecera-carrito">
+    <h3>Tu pedido</h3>
+    <button class="cerrar-carrito" id="cerrarCarrito" aria-label="Cerrar carrito">✕</button>
+  </div>
+
+  <div class="lista-carrito" id="listaCarrito">
+    <div class="carrito-vacio">
+      <div class="icono-vacio">🥐</div>
+      <p>Tu carrito está vacío.<br>Agrega bocaditos o panes desde la carta.</p>
+    </div>
+  </div>
+
+  <div class="pie-carrito">
+    <div class="fila-total">
+      <span>Total</span>
+      <span id="totalCarrito">S/ 0.00</span>
+    </div>
+        <button class="boton-whatsapp-pedido boton-finalizar-pedido" id="botonFinalizarPedido" disabled>
+      Finalizar pedido <span aria-hidden="true">→</span>
+    </button>
+    <button class="boton-seguir-comprando" id="botonSeguirComprando">Seguir comprando</button>
+    <p class="nota-pedido">Completa tus datos para confirmar el pedido.</p>
+  </div>
+</aside>
+
+<div class="aviso-toast" id="avisoToast">✔ Agregado al carrito</div>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+

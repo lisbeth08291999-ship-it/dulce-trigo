@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Administrador | Dulce Trigo</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+
+<header class="admin-barra">
+  <div class="admin-barra-marca">
+    <img src="imagenlogo.jpeg" alt="Logo de Dulce Trigo" width="52" height="40">
+    <div>
+      <strong>Panel de administración</strong>
+      <span>Dulce Trigo · pedidos recibidos</span>
+    </div>
+  </div>
+  <button type="button" class="admin-boton admin-boton-claro" id="botonSalir" hidden>Cerrar sesión</button>
+</header>
+
+<main class="admin-contenido">
+
+  <section class="admin-login" id="vistaLogin">
+    <h1>Ingresar</h1>
+    <p>Escribe la contraseña del administrador para ver los pedidos.</p>
+    <form id="formLogin" autocomplete="off">
+      <label for="claveAdmin">Contraseña</label>
+      <input type="password" id="claveAdmin" required autofocus>
+      <p class="admin-error" id="errorLogin" role="alert" hidden></p>
+      <button type="submit" class="admin-boton" id="botonEntrar">Ingresar</button>
+    </form>
+    <a class="admin-volver" href="index.html">← Volver a la tienda</a>
+  </section>
+
+  <section id="vistaPanel" hidden>
+
+    <div class="admin-metricas">
+      <div class="admin-metrica"><span>Pedidos</span><strong id="metricaPedidos">0</strong></div>
+      <div class="admin-metrica"><span>Por atender</span><strong id="metricaPendientes">0</strong></div>
+      <div class="admin-metrica"><span>Ventas</span><strong id="metricaVentas">S/ 0.00</strong></div>
+    </div>
+
+    <div class="admin-herramientas">
+      <label for="filtroEstado">Mostrar</label>
+      <select id="filtroEstado">
+        <option value="todos">Todos los pedidos</option>
+        <option value="recibido">Recibidos</option>
+        <option value="preparando">En preparación</option>
+        <option value="listo">Listos</option>
+        <option value="entregado">Entregados</option>
+        <option value="cancelado">Cancelados</option>
+      </select>
+      <button type="button" class="admin-boton admin-boton-claro" id="botonActualizar">Actualizar lista</button>
+      <span class="admin-hora" id="horaActualizacion"></span>
+    </div>
+
+    <div class="admin-columnas">
+      <div class="admin-tarjeta admin-lista">
+        <div class="admin-fila admin-fila-cabecera">
+          <span>Pedido y cliente</span><span>Entrega y pago</span><span>Total</span><span>Estado</span>
+        </div>
+        <div id="listaPedidos"></div>
+        <p class="admin-vacio" id="listaVacia" hidden>Todavía no hay pedidos en esta vista.</p>
+      </div>
+
+      <aside class="admin-tarjeta admin-detalle" id="detallePedido" aria-live="polite">
+        <p class="admin-vacio">Selecciona un pedido para ver su detalle.</p>
+      </aside>
+    </div>
+
+  </section>
+
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>

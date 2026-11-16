@@ -1,0 +1,15 @@
+{
+  "name": "dulce-trigo-panaderia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tienda web de Dulce Trigo con base de datos PostgreSQL",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "pg": "^8.11.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
